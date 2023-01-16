@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cb437b1889fa390093aee7922a697193f2e417f9daef7a42040741d02e9de33
-size 511
+package com.ssafy.db.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+@Entity
+@Getter
+@Setter
+public class UserConference extends BaseEntity{
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "conference_id")
+    private Conference conference;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private User user;
+
+}

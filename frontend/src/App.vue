@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7f10783f73c3f3bce0f4a947981207136875915996533b3507a26c490cafc90
-size 222
+<template>
+  <!-- main 으로 시작 -->
+  <Main/>
+</template>
+
+<script>
+import Main from './views/main/main.vue'
+
+export default {
+  name: 'App',
+
+  components: {
+    Main,
+  },
+
+  data: () => ({
+    //
+  }),
+}
+</script>
