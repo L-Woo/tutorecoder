@@ -1,20 +1,3 @@
-<template>
-  <!-- main 으로 시작 -->
-  <Main/>
-</template>
-
-<script>
-import Main from './views/main/main.vue'
-
-export default {
-  name: 'App',
-
-  components: {
-    Main,
-  },
-
-  data: () => ({
-    //
-  }),
-}
-</script>
+version https://git-lfs.github.com/spec/v1
+oid sha256:faaaf35aa52d30db0f1cdae3bde965da7148a498032aebaeccafabadb6188501
+size 476
